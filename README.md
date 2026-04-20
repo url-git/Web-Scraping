@@ -4,9 +4,36 @@ Projekt do scrapowania danych z X (Twitter) używając Apify API.
 
 ## Wymagania
 
+### 1. Utwórz środowisko wirtualne
+
+```bash
+# macOS / Linux:
+python -m venv venv
+
+# Windows:
+python -m venv venv
+```
+
+### 2. Aktywuj środowisko wirtualne
+
+```bash
+# macOS / Linux:
+source venv/bin/activate
+
+# Windows (PowerShell):
+venv\Scripts\Activate
+
+# Windows (CMD):
+venv\Scripts\activate.bat
+```
+
+### 3. Zainstaluj zależności
+
 ```bash
 pip install -r requirements.txt
 ```
+
+> **Uwaga:** Zawsze aktywuj venv przed uruchomieniem projektu (`source venv/bin/activate`). Środowisko wirtualne izoluje zależności tego projektu od innych.
 
 ## Konfiguracja
 
@@ -20,11 +47,10 @@ cp config.example.env .env
 ## Użycie
 
 ```bash
-# Aktywuj środowisko
-source venv/bin/activate  # lub venv\Scripts\activate na Windows
-
-# Uruchom scraper
 python scrape.py -q "OpenCode" -m 20 -t Top
+python scrape.py -q "Cloud Code" -m 20 -t Top
+python scrape.py -q "Google Analytics 4" -m 20 -t Top
+python scrape.py -q "Google Tag Manager" -m 20 -t Top
 ```
 
 ### Parametry:
