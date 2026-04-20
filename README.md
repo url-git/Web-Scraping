@@ -47,7 +47,7 @@ cp config.example.env .env
 ## Użycie
 
 ```bash
-python scrape.py -q "OpenCode" "Cloud Code" "Google Analytics 4" "Google Tag Manager" -m 5 -t Top
+python scrape.py -q "OpenCode" "Cloud Code" -m 5 -t Top
 ```
 
 ### Parametry:
