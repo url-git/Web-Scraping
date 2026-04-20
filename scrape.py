@@ -164,7 +164,7 @@ def main():
         markdown = format_to_markdown(filtered, keyword)
         all_markdown += markdown
 
-    filename = f"tweets-{datetime.now().strftime('%Y-%m-%d')}.md"
+    filename = f"tweets-{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.md"
     save_to_file(all_markdown, filename)
 
     print(f"\n✅ Gotowe! Wynik w: {OUTPUT_DIR / filename}")
