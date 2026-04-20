@@ -31,6 +31,7 @@ load_dotenv()
 ACTOR_ID = "kaitoeasyapi/twitter-x-data-tweet-scraper-pay-per-result-cheapest"
 OUTPUT_DIR = Path(__file__).parent / "output"
 OUTPUT_DIR.mkdir(exist_ok=True)
+SEEN_TWEETS_FILE = Path(__file__).parent / "seen_tweets.json"
 
 
 def get_api_token():
@@ -51,6 +52,24 @@ def get_api_token():
     print("   2. Skopiuj token z sekcji 'API tokens'")
     print("   3. Wklej do pliku .env jako APIFY_API_TOKEN=...")
     sys.exit(1)
+
+
+def load_seen_tweets():
+    """Wczytuje listę ID tweetów, które już widzieliśmy"""
+    if SEEN_TWEETS_FILE.exists():
+        try:
+            return set(json.loads(SEEN_TWEETS_FILE.read_text(encoding="utf-8")))
+        except Exception:
+            return set()
+    return set()
+
+
+def save_seen_tweets(seen_ids):
+    """Zapisuje listę ID tweetów do pliku"""
+    try:
+        SEEN_TWEETS_FILE.write_text(json.dumps(list(seen_ids)), encoding="utf-8")
+    except Exception as e:
+        print(f"⚠️ Nie udało się zapisać seen_tweets.json: {e}")
 
 
 def scrape_tweets(query, max_items=20, query_type="Top"):
@@ -158,16 +177,44 @@ def main():
     all_markdown = "# Web Scraping - X Tweets\n\n"
     all_markdown += f"*Data pobrania: {datetime.now().strftime('%Y-%m-%d %H:%M')}*\n\n"
 
+    seen_ids = load_seen_tweets()
+    new_seen_ids = set()
+    total_new = 0
+
     for keyword in keywords:
         items = scrape_tweets(keyword, args.max, args.type)
         filtered = filter_tweets(items, keyword)
-        markdown = format_to_markdown(filtered, keyword)
+        
+        # Deduplikacja
+        unique_items = []
+        for item in filtered:
+            tweet_id = item.get("id") or item.get("url")
+            if tweet_id and tweet_id not in seen_ids and tweet_id not in new_seen_ids:
+                unique_items.append(item)
+                new_seen_ids.add(tweet_id)
+            elif tweet_id:
+                # Tweet już widzieliśmy w tej sesji lub poprzednich
+                continue
+            else:
+                # Brak ID/URL, dodajemy na wszelki wypadek (mało prawdopodobne)
+                unique_items.append(item)
+
+        total_new += len(unique_items)
+        markdown = format_to_markdown(unique_items, keyword)
         all_markdown += markdown
 
-    filename = f"tweets-{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.md"
+    if total_new == 0:
+        print("\nℹ️ Nie znaleziono żadnych nowych tweetów.")
+        # Opcjonalnie: można przerwać zapisywanie pustego pliku, 
+        # ale zostawmy to użytkownikowi do decyzji.
+        
+    filename = f"raw-tweets-{datetime.now().strftime('%Y-%m-%d')}.md"
     save_to_file(all_markdown, filename)
+    
+    # Zapisujemy nowe ID do pliku na przyszłość
+    save_seen_tweets(seen_ids.union(new_seen_ids))
 
-    print(f"\n✅ Gotowe! Wynik w: {OUTPUT_DIR / filename}")
+    print(f"\n✅ Gotowe! Pobrano unikalnych: {total_new}. Wynik w: {OUTPUT_DIR / filename}")
 
 
 if __name__ == "__main__":
