@@ -20,9 +20,16 @@ Jeśli plik nie istnieje lub nie zawiera `APIFY_API_TOKEN` - poproś użytkownik
 
 ### Krok 2: Uruchom skrypt (TYLKO RAZ)
 
+Jeśli użytkownik nie podał konkretnej frazy - użyj domyślnych: "OpenCode" i "Cloud Code".
+
 Uruchom skrypt podając wszystkie słowa kluczowe jednocześnie, aby uniknąć tworzenia wielu plików:
 ```
-cd /Users/p/Documents/dev/Web-Scraping && source venv/bin/activate && python scrape.py -q "OpenCode" "Claude Code" -m 10 -t Top
+cd /Users/p/Documents/dev/Web-Scraping && source venv/bin/activate && python scrape.py -q "OpenCode" "Cloud Code" -m 10 -t Top
+```
+
+Jeśli użytkownik podał własną frazę (np. "AI" "machine learning"):
+```
+cd /Users/p/Documents/dev/Web-Scraping && source venv/bin/activate && python scrape.py -q "AI" "machine learning" -m 10 -t Top
 ```
 
 ### Krok 3: Wygeneruj raport w języku polskim

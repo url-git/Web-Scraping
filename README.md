@@ -67,7 +67,13 @@ Wyniki zapisują się w folderze `output/`:
 
 ## Uruchomienie z Open Code
 
-Gdy potrzebujesz pobrać tweety, skopiuj i wyślij agentowi poniższą instrukcję:
+### Wersja 1: Domyślne frazy (OpenCode + Cloud Code)
+
+```
+Korzystając ze Skilla z '/Users/p/Documents/dev/Web-Scraping/.opencode/skills/scraper/SKILL.md', pobierz nowe tweety z serwisu X. Wynikowy plik markdown zapisz w '/Users/p/Documents/dev/Web-Scraping/output/'.
+```
+
+### Wersja 2: Własna fraza
 
 ```
 Korzystając ze Skilla z '/Users/p/Documents/dev/Web-Scraping/.opencode/skills/scraper/SKILL.md', pobierz nowe tweety z serwisu X dla frazy [WPISZ_FRAZĘ]. Wynikowy plik markdown zapisz w '/Users/p/Documents/dev/Web-Scraping/output/'.
