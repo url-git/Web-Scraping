@@ -24,12 +24,12 @@ Jeśli użytkownik nie podał konkretnej frazy - użyj domyślnych: "OpenCode" i
 
 Uruchom skrypt podając wszystkie słowa kluczowe jednocześnie, aby uniknąć tworzenia wielu plików:
 ```
-cd /Users/p/Documents/dev/Web-Scraping && source venv/bin/activate && python scrape.py -q "OpenCode" "Cloud Code" -m 10 -t Top
+cd /Users/p/Documents/dev/Web-Scraping && source venv/bin/activate && python scrape.py -q "OpenCode" "Cloud Code" -m 10 -t Top -l 100
 ```
 
 Jeśli użytkownik podał własną frazę (np. "AI" "machine learning"):
 ```
-cd /Users/p/Documents/dev/Web-Scraping && source venv/bin/activate && python scrape.py -q "AI" "machine learning" -m 10 -t Top
+cd /Users/p/Documents/dev/Web-Scraping && source venv/bin/activate && python scrape.py -q "AI" "machine learning" -m 10 -t Top -l 100
 ```
 
 ### Krok 3: Wygeneruj raport w języku polskim

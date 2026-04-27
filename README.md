@@ -58,6 +58,7 @@ python scrape.py -q "OpenCode" "Cloud Code" -m 5 -t Top
 - `-q` --query: hasło wyszukiwania (domyślnie: OpenCode)
 - `-m` --max: liczba tweetów na frazę (domyślnie: 5)
 - `-t` --type: Top lub Latest (domyślnie: Top)
+- `-l` --likes: minimalna liczba polubień (domyślnie: 20)
 
 ## Wyniki
 
@@ -73,13 +74,7 @@ Wyniki zapisują się w folderze `output/`:
 Korzystając ze Skilla z '/Users/p/Documents/dev/Web-Scraping/.opencode/skills/scraper/SKILL.md', pobierz nowe tweety z serwisu X. Wynikowy plik markdown zapisz w '/Users/p/Documents/dev/Web-Scraping/output/'.
 ```
 
-### Wersja 2: Własna fraza
-
-```
-Korzystając ze Skilla z '/Users/p/Documents/dev/Web-Scraping/.opencode/skills/scraper/SKILL.md', pobierz nowe tweety z serwisu X dla frazy [WPISZ_FRAZĘ]. Wynikowy plik markdown zapisz w '/Users/p/Documents/dev/Web-Scraping/output/'.
-```
-
-### Wersja 3: Własne frazy do skopiowania
+### Wersja 2: Własne frazy
 
 ```
 Korzystając ze Skilla z '/Users/p/Documents/dev/Web-Scraping/.opencode/skills/scraper/SKILL.md', pobierz nowe tweety z serwisu X dla fraz [OpenCode, Cloud Code, OpenRouter, OpenAI Codex, Antigravity, @warpdotdev, Gemini CLI, @stape_io]. Wynikowy plik markdown zapisz w '/Users/p/Documents/dev/Web-Scraping/output/'.

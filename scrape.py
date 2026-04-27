@@ -107,17 +107,19 @@ def scrape_tweets(query, max_items=20, query_type="Top"):
         return []
 
 
-def filter_tweets(items, keyword):
-    """Filtruje tweety zawierające keyword"""
+def filter_tweets(items, keyword, min_likes=20):
+    """Filtruje tweety zawierające keyword i mające min_likes polubień"""
     filtered = []
     keyword_lower = keyword.lower()
 
     for item in items:
         text = item.get("text", "")
-        if keyword_lower in text.lower():
+        like_count = item.get("likeCount", 0)
+        
+        if keyword_lower in text.lower() and like_count >= min_likes:
             filtered.append(item)
 
-    print(f"📝 Przefiltrowano: {len(filtered)}/{len(items)} tweetów zawiera '{keyword}'")
+    print(f"📝 Przefiltrowano: {len(filtered)}/{len(items)} tweetów spełnia kryteria (słowo: '{keyword}', min. {min_likes} ❤️)")
     return filtered
 
 
@@ -169,6 +171,7 @@ def main():
     parser.add_argument("-m", "--max", type=int, default=5, help="Maksymalna liczba tweetów na frazę")
     parser.add_argument("-t", "--type", default="Top", choices=["Top", "Latest"],
                       help="Typ wyszukiwania")
+    parser.add_argument("-l", "--likes", type=int, default=20, help="Minimalna liczba polubień (default: 20)")
 
     args = parser.parse_args()
 
@@ -183,7 +186,7 @@ def main():
 
     for keyword in keywords:
         items = scrape_tweets(keyword, args.max, args.type)
-        filtered = filter_tweets(items, keyword)
+        filtered = filter_tweets(items, keyword, args.likes)
         
         # Deduplikacja
         unique_items = []
