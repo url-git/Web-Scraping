@@ -70,14 +70,26 @@ Wyniki zapisują się w folderze `output/`:
 
 ### Wersja 1: Domyślne frazy (OpenCode + Cloud Code)
 
+Polecenie dla agenta:
 ```
 Korzystając ze Skilla z '/Users/p/Documents/dev/Web-Scraping/.opencode/skills/scraper/SKILL.md', pobierz nowe tweety z serwisu X. Wynikowy plik markdown zapisz w '/Users/p/Documents/dev/Web-Scraping/output/'.
 ```
 
+Komenda bash (do uruchomienia ręcznego):
+```bash
+cd /Users/p/Documents/dev/Web-Scraping && source venv/bin/activate && python scrape.py -q "OpenCode" "Cloud Code" -m 10 -t Top -l 100
+```
+
 ### Wersja 2: Własne frazy
 
+Polecenie dla agenta:
 ```
 Korzystając ze Skilla z '/Users/p/Documents/dev/Web-Scraping/.opencode/skills/scraper/SKILL.md', pobierz nowe tweety z serwisu X dla fraz [OpenCode, Cloud Code, OpenRouter, OpenAI Codex, Antigravity, @warpdotdev, Gemini CLI, @stape_io]. Wynikowy plik markdown zapisz w '/Users/p/Documents/dev/Web-Scraping/output/'.
+```
+
+Komenda bash (do uruchomienia ręcznego):
+```bash
+cd /Users/p/Documents/dev/Web-Scraping && source venv/bin/activate && python scrape.py -q "OpenCode" "Cloud Code" "OpenRouter" "OpenAI Codex" "Antigravity" "@warpdotdev" "Gemini CLI" "@stape_io" -m 10 -t Top -l 100
 ```
 
 ### Co robi agent:
