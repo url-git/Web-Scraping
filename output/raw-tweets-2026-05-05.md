@@ -1,32 +1,75 @@
 # Web Scraping - X Tweets
 
-*Data pobrania: 2026-05-05 08:08*
+*Data pobrania: 2026-05-05 18:38*
 
 ## OpenCode
 
-*Pobrano: 2026-05-05 08:08*
+*Pobrano: 2026-05-05 18:39*
 
-### @opencode
-**OpenCode** | Data: Tue May 05 04:23:42 +0000 2026 | ❤️ Polubienia: 288 | 🔁 10 | 👁 10479
+### @llmdevguy
+**Mateusz Mirkowski** | Data: Fri May 01 22:16:01 +0000 2026 | ❤️ Polubienia: 377 | 🔁 16 | 👁 22483
 
-RT @jayair: OpenCode Go is now our second breakout product
+🌟OpenCode Go for $5–10 + Hermes = a never-ending autonomous agent.
 
-Closing in on 1T tokens per day
+All of these are great options, but DeepSeek V4 Flash is just a never-ending, unstoppable monster.
 
-Shoutout to Frank and the team https://t.co/mF…
+Around 158k requests per month. Wow.
 
-[Link do tweeta](https://x.com/opencode/status/2051518173548298662)
+Not good for you? No problem. Use pro. 😇 
+
+Amazing times to have your own agent. Don't waste it.
+
+[Link do tweeta](https://x.com/llmdevguy/status/2050338477217366311)
 
 ---
 
-### @superdoteng
-**super.engineering** | Data: Mon May 04 16:24:13 +0000 2026 | ❤️ Polubienia: 2426 | 🔁 109 | 👁 154210
+### @DataChaz
+**Charly Wargnier** | Data: Sat May 02 12:04:19 +0000 2026 | ❤️ Polubienia: 105 | 🔁 13 | 👁 11767
 
-OpenCode just got a major upgrade.
+🚨 Let's look at the API math behind AI agents.
 
-Native GUI chat, switch to terminal anytime, inline diffs, git panel, message queueing, steering, rich tool calls, switch providers mid-conversation, and more. https://t.co/pVCUpIbrAw
+Someone just ran 831,962,136 tokens through DeepSeek for only $10.57.
 
-[Link do tweeta](https://x.com/superdoteng/status/2051337107860308276)
+When building tools like OpenCode, output tokens dictate your burn rate because the agent must constantly re-read your codebase.
+
+If we migrate those 831.9M tokens over to Anthropic’s Opus 4.7 ($5/M input, $25/M output), here is the damage based on your I/O split:
+
+> 100/0 Split (Pure context, unrealistic): $4,159.81
+> 90/10 Split (Standard coding agent): $3,743.83 (in) + $2,079.91 (out) = $5,823.74
+> 80/20 Split (Higher output tasks): $3,327.85 (in) + $4,159.81 (out) = $7,487.66
+> 50/50 Split (Maximum output cost): $2,079.90 (in) + $10,399.53 (out) = $12,479.43
+
+You'd be dropping $5k to $8k on Claude for a workload that costs less than lunch on DeepSeek.
+
+A 500-700x price drop for similar-ish performance is a wake-up call for the entire industry.
+
+[Link do tweeta](https://x.com/DataChaz/status/2050546926089646361)
+
+---
+
+### @opencode
+**OpenCode** | Data: Tue May 05 09:33:35 +0000 2026 | ❤️ Polubienia: 675 | 🔁 12 | 👁 41843
+
+RT @brendonovich: OpenCode Desktop is now running on Electron. Let us know if you run into any issues :)
+
+[Link do tweeta](https://x.com/opencode/status/2051596156078362946)
+
+---
+
+### @0xSero
+**0xSero** | Data: Tue May 05 15:45:25 +0000 2026 | ❤️ Polubienia: 167 | 🔁 4 | 👁 9397
+
+I still stand by Droid being the best agent harness out there. I’ve tested everything under the sun.
+
+#1 Droid
+#2 Pi
+#3 Amp
+#4 OpenCode
+#5 Codex CLI
+
+I am still working on a few reviews but performance wise this has been my experience.
+
+[Link do tweeta](https://x.com/0xSero/status/2051689733793755405)
 
 ---
 
@@ -35,154 +78,69 @@ Native GUI chat, switch to terminal anytime, inline diffs, git panel, message qu
 Brak tweetów do wyświetlenia.
 ## OpenRouter
 
-Brak tweetów do wyświetlenia.
+*Pobrano: 2026-05-05 18:39*
+
+### @alexatallah
+**Alex Atallah** | Data: Mon May 04 12:24:49 +0000 2026 | ❤️ Polubienia: 542 | 🔁 20 | 👁 60491
+
+OpenRouter can now cache your LLM responses for free!
+
+[Link do tweeta](https://x.com/alexatallah/status/2051276860177121616)
+
+---
+
 ## OpenAI Codex
 
 Brak tweetów do wyświetlenia.
 ## Antigravity
 
-*Pobrano: 2026-05-05 08:11*
+*Pobrano: 2026-05-05 18:40*
 
-### @RoundtableSpace
-**0xMarioNawfal** | Data: Sat May 02 13:45:00 +0000 2026 | ❤️ Polubienia: 268 | 🔁 21 | 👁 61437
+### @CodeEdison
+**Edison** | Data: Sat May 02 14:53:12 +0000 2026 | ❤️ Polubienia: 359 | 🔁 8 | 👁 71577
 
-GPT Image 2 + Google Antigravity = animated websites that look like this.
+I’m ready to invest $20, which one should I choose? 
 
-18 minutes to learn how to build one yourself.
+- Claude
+- Codex
+- Cursor
+- Antigravity
+- GitHub Copilot
 
-Web design agencies are having a rough year.
- https://t.co/NqPkMbC0at
+Which one is more worth it right now?
 
-[Link do tweeta](https://x.com/RoundtableSpace/status/2050572264576548864)
-
----
-
-### @amritwt
-**amrit** | Data: Wed Apr 29 17:59:07 +0000 2026 | ❤️ Polubienia: 399 | 🔁 3 | 👁 26284
-
-google antigravity just went missing bro
-
-[Link do tweeta](https://x.com/amritwt/status/2049549051046043714)
+[Link do tweeta](https://x.com/CodeEdison/status/2050589426376479150)
 
 ---
 
 ## @warpdotdev
 
-*Pobrano: 2026-05-05 08:11*
+*Pobrano: 2026-05-05 18:40*
 
-### @zachlloydtweets
-**Zach Lloyd** | Data: Mon May 04 17:59:19 +0000 2026 | ❤️ Polubienia: 330 | 🔁 20 | 👁 17214
+### @BHolmesDev
+**Ben Holmes** | Data: Tue Apr 28 16:26:11 +0000 2026 | ❤️ Polubienia: 118 | 🔁 1 | 👁 6937
 
-RT @warpdotdev: After open-sourcing the terminal, we started asking... what else should we open-source?
+@warpdotdev So proud to be a part of this. Open source is the best and only way to build lasting software
 
-Well, now we've open-sourced our d…
-
-[Link do tweeta](https://x.com/zachlloydtweets/status/2051361040420512205)
+[Link do tweeta](https://x.com/BHolmesDev/status/2049163278727647547)
 
 ---
 
-### @andrew__reed
-**Andrew Reed** | Data: Thu Apr 23 03:48:09 +0000 2026 | ❤️ Polubienia: 315 | 🔁 18 | 👁 42832
+### @zachlloydtweets
+**Zach Lloyd** | Data: Wed Apr 22 23:31:00 +0000 2026 | ❤️ Polubienia: 314 | 🔁 18 | 👁 42843
 
 RT @warpdotdev: Why use @ampcode? It's kinda the Porsche of CLI coding agents:
 
 – Polished TUI w/ fullscreen rendering
 – Smart routing acro…
 
-[Link do tweeta](https://x.com/andrew__reed/status/2047160571871756329)
-
----
-
-### @FredKSchott
-**fks** | Data: Tue May 05 04:39:27 +0000 2026 | ❤️ Polubienia: 330 | 🔁 20 | 👁 17214
-
-RT @warpdotdev: After open-sourcing the terminal, we started asking... what else should we open-source?
-
-Well, now we've open-sourced our d…
-
-[Link do tweeta](https://x.com/FredKSchott/status/2051522134741323785)
+[Link do tweeta](https://x.com/zachlloydtweets/status/2047095859955839412)
 
 ---
 
 ## Gemini CLI
 
-*Pobrano: 2026-05-05 08:12*
-
-### @DamiDefi
-**Dami-Defi** | Data: Mon May 04 15:15:00 +0000 2026 | ❤️ Polubienia: 104 | 🔁 14 | 👁 13373
-
-Junior developers are being replaced by AI agents that run directly in the terminal.
-
-Google just built one and freeCodeCamp turned it into a free 3-hour course. 
-
-The results are wild.
-
-freeCodeCamp just dropped a free course on Gemini CLI, Google's agentic coding tool that runs directly in your terminal.
-
-Here is what it covers:
-→ Setting up Gemini CLI and integrating Google's Gemini models into your workflow
-→ Advanced context management for deep repository understanding
-→ Automating complex development tasks without touching the GUI
-→ Safety frameworks for agentic code execution
-→ Extensibility and automation for repeatable workflows
-
-This is not a chatbot tutorial. This is how to build an AI agent that understands your entire codebase, plans changes, and executes them from the terminal.
-
-This is the same workflow pattern used by Claude Code, Cursor, and every serious agentic coding setup in 2026.
-
-Software development is shifting from manual coding to agent-driven workflows.
-
-The developers who understand how to orchestrate these tools are the ones getting the $250K+ offers.
-
-The course is free. Andrew Brown from ExamPro built it. It is on the freeCodeCamp YouTube channel right now.
-
-3 hours. Free. Zero excuses
-
-[Link do tweeta](https://x.com/DamiDefi/status/2051319689692037169)
-
----
-
-### @camenyan
-**カメラにゃんこ𝕏お散歩主義** | Data: Tue May 05 00:53:30 +0000 2026 | ❤️ Polubienia: 246 | 🔁 28 | 👁 15461
-
-RT @JackWoth98: Automatically create Agent Skills from past sessions.
-
-Gemini CLI can now comb through past session data and suggest new sk…
-
-[Link do tweeta](https://x.com/camenyan/status/2051465273220501871)
-
----
-
-### @TimJayas
-**Tim Jayas** | Data: Fri May 01 13:20:39 +0000 2026 | ❤️ Polubienia: 137 | 🔁 10 | 👁 10558
-
-CLAUDE CODE DESIGN BUT IT'S FREE! 
-
-Someone cloned Claude Code and make it completely free
-
-&gt; Generates UI/UX, dashboards, slides1
-&gt; Local first open source clone of Claude Design
-&gt; Plugs into Claude, Cursor, Codex, Gemini CLI, OpenCode, Ollama, etc
-
-100% Open Source and Free 👀 https://t.co/h6jCYnKRuN
-
-[Link do tweeta](https://x.com/TimJayas/status/2050203751613669477)
-
----
-
-### @okikusan_public
-**OKIKU@solution architect** | Data: Tue May 05 02:57:37 +0000 2026 | ❤️ Polubienia: 376 | 🔁 71 | 👁 1400177
-
-RT @flutterflow: the request: "let my agent work inside FlutterFlow." 
-
-the answer: yes.
-
-FlutterFlow MCP is live. Claude Code, Gemini CLI,…
-
-[Link do tweeta](https://x.com/okikusan_public/status/2051496510148506074)
-
----
-
+Brak tweetów do wyświetlenia.
 ## @stape_io
 
 Brak tweetów do wyświetlenia.
