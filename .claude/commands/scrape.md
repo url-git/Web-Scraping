@@ -21,7 +21,7 @@ cd /Users/p/Documents/dev/Web-Scraping && source venv/bin/activate && python scr
 
 ## Krok 3: Wygeneruj raport po polsku
 
-Przeczytaj `output/raw-tweets-{YYYY-MM-DD}.md` i utwórz `output/tweets-{YYYY-MM-DD}.md`.
+Przeczytaj `/Users/p/Documents/dev/Web-Scraping/output/raw-tweets-{YYYY-MM-DD}.md` (gdzie YYYY-MM-DD to dzisiejsza data z kroku 1) i utwórz `/Users/p/Documents/dev/Web-Scraping/output/tweets-{YYYY-MM-DD}.md`.
 
 ### Format pliku wynikowego
 
@@ -58,8 +58,10 @@ Przeczytaj `output/raw-tweets-{YYYY-MM-DD}.md` i utwórz `output/tweets-{YYYY-MM
 
 ## Krok 4: Git commit i push
 
+Wygeneruj krótki (3-5 słów) opis głównych trendów z raportu (np. "OpenCode Grok Build, Antigravity 2.0"), następnie:
+
 ```bash
-cd /Users/p/Documents/dev/Web-Scraping && git add -A && git commit -m "Scrape tweets for $(date +%Y-%m-%d): [krótki opis trendów]" && git push
+cd /Users/p/Documents/dev/Web-Scraping && git add -A && git commit -m "Scrape tweets for 9 keywords (YYYY-MM-DD) and generate Polish report" && git push
 ```
 
-Po zapisaniu pliku wyświetl użytkownikowi podsumowanie w czacie.
+(zastąp YYYY-MM-DD dzisiejszą datą z kroku 1)
